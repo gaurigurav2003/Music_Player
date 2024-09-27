@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light background for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+}
+
+.music-player {
+    background-color: #fff; /* White background for the player */
+    border: 2px solid #4caf50; /* Green border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 20px; /* Inner spacing */
+    width: 300px; /* Fixed width */
+    text-align: center; /* Center text */
+}
+
+#track-cover {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners for the cover image */
+    margin-bottom: 10px; /* Spacing below image */
+}
+
+.track-info h3, .track-info h4 {
+    margin: 5px 0; /* Spacing between titles */
+    color: #333; /* Darker text color */
+}
+
+.controls {
+    margin: 10px 0; /* Spacing for controls */
+}
+
+.controls button {
+    background-color: #4caf50; /* Green button */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Inner spacing */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth background transition */
+    font-size: 18px; /* Adjusted font size for icons */
+}
+
+.controls button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.progress {
+    margin: 15px 0; /* Increased spacing for better layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#progress-bar {
+    width: 100%; /* Full width */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.time-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Space between time displays */
+    margin-top: 5px; /* Spacing above time info */
+    color: #555; /* Lighter text color for time */
+    font-size: 14px; /* Smaller font size for time */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .music-player {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .controls button {
+        padding: 8px 12px; /* Smaller padding for buttons */
+        font-size: 16px; /* Adjusted font size for icons */
+    }
+
+    #progress-bar {
+        width: 100%; /* Ensure progress bar fits within the container */
+    }
+}
